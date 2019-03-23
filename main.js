@@ -219,18 +219,44 @@ const petBuilder = (pets) => {
     let message ='';
     pets.forEach((pet) => {
         message += `<div class="card">`;
-        message += `<p>Name: ${pet.name}</p>`;
+        message += `<h4>Name: ${pet.name}</h4>`;
         message += `<img src="${pet.imageUrl}">`;
-        message += `<p>Color: ${pet.color}</p>`;
-        message += `<p>Special Skill: ${pet.specialSkill}</p>`;
-        message += `<p>Type of Pet: ${pet.type}</p>`;
+        message += `<h4>Color: ${pet.color}</h4>`;
+        message += `<h4>Special Skill: ${pet.specialSkill}</h4>`;
+        message += `<h4 class='botTxt'>${pet.type}</h4>`;
         message += `</div>`;
     });
     printToDom('petsDiv', message);
 };
 
+const buttonClick = (e) => {
+  const buttonId = e.target.id;
+    
+    const selectedPets = [];
+    pets.forEach((pet) => {
+      if (pet.type === buttonId) {
+        selectedPets.push(pet);
+      }    
+    });
+
+    if(buttonId === 'All'){
+      petBuilder(pets);  
+    } else{
+      petBuilder(selectedPets);
+    }
+};
+
+const buttonEvents = () => {
+    document.getElementById('cat').addEventListener('click', buttonClick);
+    document.getElementById('dog').addEventListener('click', buttonClick);
+    document.getElementById('dino').addEventListener('click', buttonClick);
+    document.getElementById('All').addEventListener('click', buttonClick);
+  };
+
+
 
 const init = () => {
+  buttonEvents();
     petBuilder(pets);
 };
 
