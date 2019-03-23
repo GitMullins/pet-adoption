@@ -1,12 +1,12 @@
 # Pet Adoption
-Makes an array of pies
+Sorts an array of pets based on pet type
 
 ## Screenshots
-![image of pies](https://raw.githubusercontent.com/GitMullins/pie/master/screenshots/screenshot.png)
+![image of pets](https://raw.githubusercontent.com/GitMullins/pet-adoption/master/Screenshot.png)
 
 ## Getting Started
 ```
-$ git clone https://github.com/GitMullins/pie
+$ git clone https://github.com/GitMullins/pet-adoption
 ```
 ### Prerequisites
 ```
