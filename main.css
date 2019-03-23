@@ -13,6 +13,7 @@
     justify-content: space-around;
 
     text-align: center;
+    font-style: bold;
 }
 .card{
     border: 3px solid darkblue;
@@ -20,6 +21,10 @@
     width: 350px;
     height: 450px;
     margin: 8px;
+}
+
+.botTxt{
+    /* vertical-align: -50%; */
 }
 
   body{
@@ -30,3 +35,25 @@
     height: 200px;
     width: 300px;
   }
+
+button{
+    -webkit-text-fill-color: white;
+    width: 100px;
+    height: 33px;
+}
+
+#All{
+    background-color: purple;
+}
+
+#cat{
+    background-color: rgb(19, 97, 122);
+}
+
+#dog{
+    background-color: green;
+}
+
+#dino{
+    background-color: orange;
+}
