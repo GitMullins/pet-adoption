@@ -1,5 +1,5 @@
 # Pet Adoption
-Sorts arrays of pets based on pet type
+Sorts an array of pets based on pet type
 
 ## Screenshots
 ![image of pets](https://raw.githubusercontent.com/GitMullins/pet-adoption/master/Screenshot.png)
